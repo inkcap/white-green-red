@@ -1,1 +1,1 @@
-CSS Framework with no no JavaScript
+CSS Framework with no JavaScript
