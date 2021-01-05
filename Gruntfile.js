@@ -1,8 +1,7 @@
 /*!
- * Bootstrap's Gruntfile
- * http://getbootstrap.com
- * Copyright 2013-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * v3.1.1 (https://github.com/inkcap/white-green-red)
+ * Copyright 2011-2021 inkcap
+ * Licensed under MIT (https://github.com/inkcap/white-green-red/blob/master/LICENSE)
  */
 
 module.exports = function (grunt) {
@@ -28,11 +27,11 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-            ' * Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * white-green-red v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
             ' */\n',
-    jqueryCheck: 'if (typeof jQuery === \'undefined\') { throw new Error(\'Bootstrap\\\'s JavaScript requires jQuery\') }\n\n',
+    jqueryCheck: 'if (typeof jQuery === \'undefined\') { throw new Error(\'white-green-red\\\'s JavaScript requires jQuery\') }\n\n',
 
     // Task configuration.
     clean: {
@@ -83,8 +82,8 @@ module.exports = function (grunt) {
         csslintrc: 'less/.csslintrc'
       },
       src: [
-        'dist/css/bootstrap.css',
-        'dist/css/bootstrap-theme.css',
+        'dist/css/white-green-red.css',
+        'dist/css/white-green-red-theme.css',
         'docs/assets/css/docs.css',
         'docs/examples/**/*.css'
       ]
@@ -95,7 +94,7 @@ module.exports = function (grunt) {
         banner: '<%= banner %>\n<%= jqueryCheck %>',
         stripBanners: false
       },
-      bootstrap: {
+      white-green-red: {
         src: [
           'js/transition.js',
           'js/alert.js',
@@ -118,11 +117,11 @@ module.exports = function (grunt) {
       options: {
         report: 'min'
       },
-      bootstrap: {
+      white-green-red: {
         options: {
           banner: '<%= banner %>'
         },
-        src: '<%= concat.bootstrap.dest %>',
+        src: '<%= concat.white-green-red.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
       },
       customize: {
@@ -162,7 +161,7 @@ module.exports = function (grunt) {
           sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
         },
         files: {
-          'dist/css/<%= pkg.name %>.css': 'less/bootstrap.less'
+          'dist/css/<%= pkg.name %>.css': 'less/white-green-red.less'
         }
       },
       compileTheme: {

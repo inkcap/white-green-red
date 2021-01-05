@@ -1,28 +1,28 @@
 {
-  "name": "bootstrap",
-  "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+  "name": "white-green-red",
+  "description": "",
   "version": "3.1.1",
   "keywords": [
-    "bootstrap",
+    "white-green-red",
     "css"
   ],
-  "homepage": "http://getbootstrap.com",
-  "author": "Twitter, Inc.",
+  "homepage": "https://github.com/inkcap/white-green-red",
+  "author": "",
   "scripts": {
     "test": "grunt test"
   },
-  "style": "./dist/css/bootstrap.css",
-  "less": "./less/bootstrap.less",
+  "style": "./dist/css/white-green-red.css",
+  "less": "./less/white-green-red.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/inkcap/white-green-red"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/inkcap/white-green-red/issues"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/twbs/bootstrap/blob/master/LICENSE"
+    "url": "https://github.com/inkcap/white-green-red/blob/master/LICENSE"
   },
   "devDependencies": {
     "btoa": "~1.1.1",
@@ -52,13 +52,13 @@
     "markdown": "~0.5.0"
   },
   "jspm": {
-    "main": "js/bootstrap",
+    "main": "js/white-green-red",
     "directories": {
       "example": "examples",
       "lib": "dist"
     },
     "shim": {
-      "js/bootstrap": {
+      "js/white-green-red": {
         "imports": "jquery",
         "exports": "$"
       }
