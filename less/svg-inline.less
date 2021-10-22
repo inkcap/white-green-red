@@ -1,4 +1,5 @@
 //Function to convert svg's into inline css
+// https://stackoverflow.com/questions/10768451/inline-svg-in-css
 @function svg-inline($string){
   $result: str-replace($string, "<svg", "<svg xmlns='http://www.w3.org/2000/svg'");
   $result: str-replace($result, '%', '%25');
